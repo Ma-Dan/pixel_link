@@ -132,14 +132,14 @@ def test():
             mask = mask_vals[image_idx, ...]
 
             bboxes_det = get_bboxes(mask)
-            
+            print(bboxes_det)
             mask = resize(mask)
             pixel_score = resize(pixel_score)
 
             draw_bboxes(image_data, bboxes_det, util.img.COLOR_RGB_RED)
 #             print util.sit(pixel_score)
 #             print util.sit(mask)
-            print util.sit(image_data)
+            print(util.sit(image_data))
                 
         
 def main(_):
